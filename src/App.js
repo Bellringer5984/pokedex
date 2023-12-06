@@ -1,10 +1,12 @@
 import './App.css';
 import PokeList from './PokeList';
+import Header from './Header';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>PokeDex</h1>
+      <Header />
       <PokeList />
     </div>
   );

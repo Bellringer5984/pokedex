@@ -82,3 +82,17 @@
     height: auto;
     border: solid black;
 }
+
+.header {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+@media (min-width: 600px){
+    .header {
+        position: sticky;
+    }
+}
