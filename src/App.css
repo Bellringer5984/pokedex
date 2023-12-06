@@ -91,6 +91,19 @@
     z-index: 1000;
 }
 
+.header.visible {
+    transform: translateY(0);
+}
+@media (max-width: 599px) {
+    .header {
+        transition: transform 0,3s ease-in;
+    }
+
+    .header:not(.visible) {
+        transform: translateY(-100%);
+    }
+}
+
 @media (min-width: 600px){
     .header {
         position: sticky;
