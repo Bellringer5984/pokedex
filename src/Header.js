@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import PokemonLogo from './PokemonLogo.png'
+
 
 const Header = ({ onSearch }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -25,7 +27,7 @@ const Header = ({ onSearch }) => {
 
   return (
     <header className={`header ${visible ? "visible" : ""}`}>
-      header
+      <img src={PokemonLogo} width="269" height="99"/>
       <input
         type="text"
         placeholder="Search by name or type"
