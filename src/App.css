@@ -16,7 +16,12 @@
 .pokemon-card {
     margin: 5px;
     width: 200px;
+    transition: all 1s ease;
+}
 
+.pokemon-card:hover {
+    cursor:grab;
+    transform: scale(1.1);
 }
 
   @media (min-width: 600px) {
