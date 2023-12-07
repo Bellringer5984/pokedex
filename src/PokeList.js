@@ -10,7 +10,7 @@ function PokeList() {
   const [offset, setOffset] = useState(0);
 
   const initialLoadComplete = useRef(false);
-  const limit = 20;
+  const limit = 30;
 
   const fetchPokemonDetails = async (url) => {
     try {
